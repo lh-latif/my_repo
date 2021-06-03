@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <title>Curiculum Vitae</title>
+  <style>
+  /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,600&display=swap');
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito"
+  }
+
+  .image-section {
+    flex-basis: 250px;
+    min-width: 250px;
+    display: block;
+    padding-top: 20px;
+  }
+
+  h1,h2,h4 {
+    margin: 0;
+  }
+
+  .name-text {
+    font-size: 32pt;
+    font-weight: bold;
+  }
+
+
+
+  .image-container {
+    width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+  .desc-container {
+    flex-grow: 0;
+    overflow: hidden;
+    display: block;
+    padding-left: 40px;
+  }
+
+  .page-container {
+    padding: 40px 150px;
+  }
+
+  .job-content-card {
+    margin-bottom: 30px;
+  }
+
+  .job-content-card span {
+    display: block;
+  }
+
+  .job-content-card h4 {
+    background: rgb(45, 223, 116);
+    padding: 3px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .line-break {
+    border-top: 2px solid rgb(94, 214, 151);
+    margin: 5px 0
+  }
+
+  .exp-container {
+    width: max-content;
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <div style="display: flex">
+      <div class="image-section">
+        <div class="image-container">
+          <img src="./foto2.png"/>
+        </div>
+      </div>
+      <div class="desc-container">
+        <div style="width: 100%; overflow: hidden; word-break: break-word;">
+          <div>
+            <h1 class="name-text">Latif Hidayatullah</h1>
+            <h2 class="support-text">Software Engineer, Yogyakarta</h2>
+          </div>
+
+          <p>Saya seorang 'self proclaimed' Software Engineer, dan Saya menyukai dunia pengembangan software dan interaksi manusia dengannya. Pengalaman Saya sebagai seorang engineer didunia Kerja yang formal masih sedikit.<br>
+             Karena itu Saya sangat membuka diri untuk lebih mengembangkan diri Saya melalui pengalaman dan pembelajaran yang didasari taqwa kepada Allah dan keinginan pencapaian diri.</p>
+
+          <ul>
+            <li>Panggilan: Latif</li>
+            <li>Tempat & Tanggal Lahir: Pekanbaru, 31 Oktober 1998</li>
+            <li>Jenis Kelamin: Laki-Laki</li>
+            <li>Agama: Islam</li>
+            <li>github: @lh-latif</li>
+            <li>email: latifdayatofficial@gmail.com</li>
+            <li>linkedin:</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div  style="display: flex;" >
+      <div style="flex-grow: 1; padding-right: 40px;">
+        <h3>Pengalaman Kerja</h3>
+        <ol class="exp-container">
+          <li>
+            <div class="job-content-card">
+              <h4>Fullstack Programmer</h4>
+              <span>Intelegensia, Sleman</span>
+              <span>Desember 2018 - Maret 2019</span>
+              <span class="line-break"></span>
+              <span>Laravel & PHP, Vue.js & Javascript</span>
+            </div>
+          </li>
+          <li>
+            <div class="job-content-card">
+              <h4>Mentor Frontend</h4>
+              <span>Pondok Programmer, Bantul</span>
+              <span>Januari 2021 - Sekarang</span>
+              <span class="line-break"></span>
+              <span>React.js & Javascript</span>
+            </div>
+          </li>
+          <li>
+            <div class="job-content-card">
+              <h4>Software Engineer</h4>
+              <span>Freelance</span>
+              <span>Maret 2021 - Sekarang</span>
+              <span class="line-break"></span>
+              <span>Fastapi,Appium & Python,<br> Vue.js & Javascript</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div style="flex-grow: 1">
+        <div>
+          <h3>Bahasa Pemrograman yang Saya pelajari:</h3>
+          <ol>
+            <li>Javascript</li>
+            <li>Dart</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Elixir</li>
+            <li>Erlang</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Framework dan Library yang Saya pelajari:</h3>
+          <ol>
+            <li>Laravel</li>
+            <li>Vue.js</li>
+            <li>React.js dan React Native</li>
+            <li>Node.js</li>
+            <li>Fastapi</li>
+            <li>Flutter</li>
+            <li>Phoenix, Cowboy</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
