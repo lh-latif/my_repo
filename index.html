@@ -32,12 +32,21 @@
     font-weight: bold;
   }
 
+  .page-container-flex-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
+  .image-frame {
+    padding: 12px;
+    border: 1px solid lightgray;
+  }
 
   .image-container {
-    width: 250px;
-    max-height: 250px;
-    border-radius: 50%;
+    max-width: 250px;
+    max-height: 300px;
+    border-radius: 8px;
     overflow: hidden;
     flex-grow: 1;
   }
@@ -47,10 +56,12 @@
     overflow: hidden;
     display: block;
     padding-left: 40px;
+    max-width: 500px;
   }
 
   .page-container {
-    padding: 40px 150px;
+    padding: 40px 0px;
+    max-width: 750px;
   }
 
   .job-content-card {
@@ -83,91 +94,105 @@
   </style>
 </head>
 <body>
-  <div class="page-container">
-    <div style="display: flex">
-      <div class="image-section">
-        <div class="image-container">
-          <img src="./foto2.png"/>
-        </div>
-      </div>
-      <div class="desc-container">
-        <div style="width: 100%; overflow: hidden; word-break: break-word;">
-          <div>
-            <h1 class="name-text">Latif Hidayatullah</h1>
-            <h2 class="support-text">Software Engineer, Yogyakarta</h2>
+  <div class="page-container-flex-center">
+    <div class="page-container">
+      <div style="display: flex">
+        <div class="image-section">
+          <div class="image-frame">
+            <div class="image-container">
+              <img src="./foto2.png"/>
+            </div>
           </div>
+        </div>
+        <div class="desc-container">
+          <div style="width: 100%; overflow: hidden; word-break: break-word;">
+            <div>
+              <h1 class="name-text">Latif Hidayatullah</h1>
+              <h2 class="support-text">Software Engineer, Bogor</h2>
+            </div>
 
-          <p>Saya seorang 'self proclaimed' Software Engineer, dan Saya menyukai dunia pengembangan software dan interaksi manusia dengannya. Pengalaman Saya sebagai seorang engineer didunia Kerja yang formal masih sedikit.<br>
-             Karena itu Saya sangat membuka diri untuk lebih mengembangkan diri Saya melalui pengalaman dan pembelajaran yang didasari taqwa kepada Allah dan keinginan pencapaian diri.</p>
+            <p>Saya seorang 'self proclaimed' Software Engineer, dan Saya menyukai dunia pengembangan software dan interaksi manusia dengannya. Pengalaman Saya sebagai seorang engineer didunia Kerja yang formal masih sedikit.<br>
+               Karena itu Saya sangat membuka diri untuk lebih mengembangkan diri Saya melalui pengalaman dan pembelajaran yang didasari taqwa kepada Allah dan keinginan pencapaian diri.</p>
 
-          <ul>
-            <li>Panggilan: Latif</li>
-            <li>Tempat & Tanggal Lahir: Pekanbaru, 31 Oktober 1998</li>
-            <li>Jenis Kelamin: Laki-Laki</li>
-            <li>Agama: Islam</li>
-            <li>github: @lh-latif</li>
-            <li>email: latifdayatofficial@gmail.com</li>
-            <li>linkedin: <a href="https://www.linkedin.com/in/latif-hidayatullah-9139401b7">Latif Hidayatullah</a></li>
-          </ul>
+            <ul>
+              <li>Panggilan: Latif</li>
+              <li>Tempat & Tanggal Lahir: Pekanbaru, 31 Oktober 1998</li>
+              <li>Jenis Kelamin: Laki-Laki</li>
+              <li>Agama: Islam</li>
+              <li>github: @lh-latif</li>
+              <li>email: latifdayatofficial@gmail.com</li>
+              <li>linkedin: <a href="https://www.linkedin.com/in/latif-hidayatullah-9139401b7">Latif Hidayatullah</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div  style="display: flex;" >
-      <div style="flex-grow: 1; padding-right: 40px;">
-        <h3>Pengalaman Kerja</h3>
-        <ol class="exp-container">
-          <li>
-            <div class="job-content-card">
-              <h4>Fullstack Programmer</h4>
-              <span>Intelegensia, Sleman</span>
-              <span>Desember 2018 - Maret 2019</span>
-              <span class="line-break"></span>
-              <span>Laravel & PHP, Vue.js & Javascript</span>
-            </div>
-          </li>
-          <li>
-            <div class="job-content-card">
-              <h4>Mentor Frontend</h4>
-              <span>Pondok Programmer, Bantul</span>
-              <span>Januari 2021 - Sekarang</span>
-              <span class="line-break"></span>
-              <span>React.js & Javascript</span>
-            </div>
-          </li>
-          <li>
-            <div class="job-content-card">
-              <h4>Software Engineer</h4>
-              <span>Freelance</span>
-              <span>Maret 2021 - Sekarang</span>
-              <span class="line-break"></span>
-              <span>Fastapi,Appium & Python,<br> Vue.js & Javascript</span>
-            </div>
-          </li>
-        </ol>
-      </div>
-      <div style="flex-grow: 1">
-        <div>
-          <h3>Bahasa Pemrograman yang Saya pelajari:</h3>
-          <ol>
-            <li>Javascript</li>
-            <li>Dart</li>
-            <li>PHP</li>
-            <li>Python</li>
-            <li>Elixir</li>
-            <li>Erlang</li>
+      <div  style="display: flex;" >
+        <div style="flex-grow: 1; padding-right: 40px;">
+          <h3>Pengalaman Kerja</h3>
+          <ol class="exp-container">
+            <li>
+              <div class="job-content-card">
+                <h4>Fullstack Programmer</h4>
+                <span>Intelegensia, Sleman</span>
+                <span>Desember 2018 - Maret 2019</span>
+                <span class="line-break"></span>
+                <span>Laravel & PHP, Vue.js & Javascript</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-content-card">
+                <h4>Mentor Frontend</h4>
+                <span>Pondok Programmer, Bantul</span>
+                <span>Januari 2021 - Juli 2021</span>
+                <span class="line-break"></span>
+                <span>React.js & Javascript</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-content-card">
+                <h4>Software Engineer</h4>
+                <span>Freelance</span>
+                <span>Maret 2021 - September 2021</span>
+                <span class="line-break"></span>
+                <span>Fastapi, Appium & Python,<br> Vue.js & Javascript</span>
+              </div>
+            </li>
+            <li>
+              <div class="job-content-card">
+                <h4>Front End Web Developer</h4>
+                <span>Zahir International</span>
+                <span>Agustus 2021 - Sekarang</span>
+                <span class="line-break"></span>
+                <span>React.js, Next.js, React Native,<br> Elixir & Javascript</span>
+              </div>
+            </li>
           </ol>
         </div>
-        <div>
-          <h3>Framework dan Library yang Saya pelajari:</h3>
-          <ol>
-            <li>Laravel</li>
-            <li>Vue.js</li>
-            <li>React.js dan React Native</li>
-            <li>Node.js</li>
-            <li>Fastapi</li>
-            <li>Flutter</li>
-            <li>Phoenix, Cowboy</li>
-          </ol>
+        <div style="flex-grow: 1">
+          <div>
+            <h3>Bahasa Pemrograman yang Saya pelajari:</h3>
+            <ol>
+              <li>Javascript</li>
+              <li>Dart</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>Elixir</li>
+              <li>Erlang</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Framework dan Library yang Saya pelajari:</h3>
+            <ol>
+              <li>Laravel</li>
+              <li>Vue.js</li>
+              <li>React.js dan React Native</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>Fastapi</li>
+              <li>Flutter</li>
+              <li>Phoenix, Cowboy</li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
